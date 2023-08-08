@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱优鹏 - Logo</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/5.2.3/css/bootstrap.min.css">
+    <style>
+        img.png {
+            transition: background-color .2s;
+        }
+
+        img.png {
+            background-color: rgba(35, 44, 175, .05);
+        }
+        img.png:hover {
+            background-color: rgba(35, 44, 175, .1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <h2 class="mb-4">爱优鹏 Logo 规范</h2>
+        <div class="row">
+            <script>
+                const list = [
+                    './static/爱优鹏4_画板 1.jpg',
+                    './static/爱优鹏4_画板 1.png',
+                    './static/爱优鹏2_画板 1.jpg',
+                    './static/爱优鹏2_画板 1.png',
+                    './static/爱优鹏5_画板 1.jpg',
+                    './static/爱优鹏5_画板 1.png',
+                    './static/爱优鹏3_画板 1.jpg',
+                    './static/爱优鹏3_画板 1.png',
+                    './static/爱优鹏6_画板 1.jpg',
+                    './static/爱优鹏6_画板 1.png',
+                    './static/爱优鹏7_画板 1.png',
+                    './static/爱优鹏7_画板 1.png',
+                ]
+                let html = ''
+                list.forEach(item => {
+                    html += `
+            <div class="col-lg-3 mb-4">
+                <div class="border p-3 rounded-5">
+                    <img src="${item}" class="img-fluid ${item.match(/\.png$/) ? 'png' : ''} rounded-4">
+                </div>
+            </div>`
+                })
+                document.write(html)
+            </script>
+
+        </div>
+    </div>
+</body>
+
+</html>
